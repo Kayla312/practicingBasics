@@ -1,0 +1,34 @@
+/* Tag Selector */
+h2 {
+    color: red;
+}
+
+/* Sibling Selector */
+h2 + div {
+    color: green;
+}
+
+/* Class Name Selector */
+.myList {
+    border:5px solid green;
+}
+
+/* Class Name Selector */
+.myClass {
+    background-color: green;
+}
+
+/* Qualified Selector */
+.myClass.otherClass {
+    color: white;
+}
+
+/* ID selector */
+#myId {
+    background: yellow;
+}
+
+/*  Positional pseudo-selector   */
+section > div:last-of-type {
+    border:5px solid pink;
+}
