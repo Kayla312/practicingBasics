@@ -27,19 +27,20 @@
    This will join each of the foods together into a string separated by a space.
 */
 function getFavs(){
-    alert('clicked')
+    // alert('clicked')
     var favList = [];
+    const inputs = document.querySelectorAll('input');
+        for(const input of inputs){
+            if(input.checked === true){
+                favList.push(input.parentNode.textContent)
+            }
+        };
+    document.querySelector('.favorites').textContent = favList.join(' & ');
 };
 
 const button = document.querySelector('button');
-const inputs = document.querySelectorAll('input');
-    for(const input of inputs){
-        if(input.checked === true){
-            favList.push(input.parentNode.textContent)
-        }
-    };
 
 button.onclick = getFavs;
-console.log(favList);
+// console.log(favList);
 
-document.querySelector('.favorites').textContent = favList.join(' ');
+
