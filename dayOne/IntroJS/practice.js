@@ -27,7 +27,8 @@
    This will join each of the foods together into a string separated by a space.
 */
 function getFavs(){
-    alert('clicked')
+    // alert('clicked')
+    let favList = [];
 };
 
 const button = document.querySelector('button');
