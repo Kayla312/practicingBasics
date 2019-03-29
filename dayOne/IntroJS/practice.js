@@ -29,3 +29,5 @@
 function getFavs(){
     alert('clicked')
 };
+
+const button = document.querySelector('button');
