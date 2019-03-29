@@ -32,5 +32,7 @@ function getFavs(){
 };
 
 const button = document.querySelector('button');
+const inputs = document.querySelectorAll('input');
+console.log(inputs);
 
 button.onclick = getFavs;
