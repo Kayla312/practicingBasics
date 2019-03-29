@@ -26,3 +26,6 @@
    div at the bottom of the page. Set the div's `textContent` to `favList.join(' ')`.
    This will join each of the foods together into a string separated by a space.
 */
+function getFavs(){
+    alert('clicked')
+};
