@@ -33,6 +33,11 @@ function getFavs(){
 
 const button = document.querySelector('button');
 const inputs = document.querySelectorAll('input');
-console.log(inputs);
+    for(const input of inputs){
+        if(input.checked === true){
+            favList.push(input.parentNode.textContent)
+        }
+    };
 
 button.onclick = getFavs;
+console.log(favList);
